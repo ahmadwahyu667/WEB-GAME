@@ -1,0 +1,240 @@
+/* =================================================================
+   GameMarket Indonesia — Responsive Breakpoints
+   ================================================================= */
+
+/* ---- Tablet (768px - 1199px) ---- */
+@media (max-width: 1199px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        padding: var(--space-3xl) 0;
+    }
+
+    .hero__content {
+        max-width: 100%;
+    }
+
+    .hero__artwork {
+        display: none;
+    }
+
+    .container {
+        padding: 0 var(--space-md);
+    }
+
+    .game-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Mobile (< 768px) ---- */
+@media (max-width: 767px) {
+    :root {
+        --container-padding: 16px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 1.35rem;
+    }
+
+    .hero__title {
+        font-size: 1.5rem;
+    }
+
+    .hero__subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+    }
+
+    .hero__actions .btn {
+        width: 100%;
+    }
+
+    /* Navbar mobile */
+    .navbar__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--bg-secondary);
+        padding: 80px var(--space-lg) var(--space-lg);
+        flex-direction: column;
+        transition: right var(--transition-base);
+        z-index: var(--z-modal);
+        border-left: 1px solid var(--border-color);
+    }
+
+    .navbar__menu.active {
+        right: 0;
+    }
+
+    .navbar__menu-backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: var(--z-modal-backdrop);
+    }
+
+    .navbar__menu-backdrop.active {
+        display: block;
+    }
+
+    .navbar__toggle {
+        display: flex !important;
+    }
+
+    /* Card adjustments */
+    .card__title {
+        font-size: 0.85rem;
+    }
+
+    .card__body {
+        padding: var(--space-sm);
+    }
+
+    .card__footer {
+        padding: 0 var(--space-sm) var(--space-sm);
+        flex-direction: column;
+    }
+
+    .card__footer .btn {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .price__current {
+        font-size: 0.9rem;
+    }
+
+    /* Tabs scroll */
+    .tabs {
+        gap: 8px;
+        padding: 0 var(--space-md);
+        margin-left: calc(-1 * var(--container-padding));
+        margin-right: calc(-1 * var(--container-padding));
+    }
+
+    /* Cart page */
+    .cart-item {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .cart-item__actions {
+        grid-column: 1 / -1;
+    }
+
+    /* Footer */
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    /* Section spacing */
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+
+    /* Checkout */
+    .checkout-steps {
+        flex-direction: column;
+    }
+
+    /* Payment QR */
+    .payment-qr {
+        max-width: 260px;
+    }
+
+    /* Modal */
+    .modal {
+        width: 95%;
+    }
+
+    /* Table mobile scroll hint */
+    .table-wrap::after {
+        content: '→ Geser untuk melihat';
+        display: block;
+        text-align: center;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        padding: 8px;
+    }
+
+    /* Full width buttons on mobile for important CTAs */
+    .btn-mobile-full {
+        width: 100%;
+    }
+
+    /* Admin sidebar */
+    .admin-sidebar {
+        position: fixed;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        z-index: var(--z-modal);
+        transition: left var(--transition-base);
+    }
+
+    .admin-sidebar.active {
+        left: 0;
+    }
+
+    .admin-content {
+        margin-left: 0;
+    }
+}
+
+/* ---- Small mobile (< 400px) ---- */
+@media (max-width: 399px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Desktop large (>= 1400px) ---- */
+@media (min-width: 1400px) {
+    .product-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

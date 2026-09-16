@@ -1,0 +1,91 @@
+/* =================================================================
+   GameMarket Indonesia — CSS Variables / Design Tokens
+   ================================================================= */
+
+:root {
+    /* Background Colors */
+    --bg-primary: #071421;
+    --bg-secondary: #0B1725;
+    --bg-card: #122235;
+    --bg-card-hover: #1a2d45;
+    --bg-input: #0d1b2a;
+
+    /* Brand Colors */
+    --primary-cyan: #00E5D4;
+    --accent-cyan: #00FFFF;
+    --accent-purple: #7A2CFF;
+    --accent-purple-light: #9d5cff;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary-cyan), var(--accent-purple));
+    --gradient-primary-hover: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple-light));
+    --gradient-dark: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary));
+    --gradient-card: linear-gradient(145deg, rgba(18, 34, 53, 0.8), rgba(11, 23, 37, 0.6));
+
+    /* Text Colors */
+    --text-primary: #FFFFFF;
+    --text-secondary: #8D9AAA;
+    --text-muted: #5a6a7a;
+    --text-success: #00E676;
+    --text-warning: #FFB300;
+    --text-danger: #FF5252;
+
+    /* Status Colors */
+    --status-pending: #FFB300;
+    --status-waiting: #FF9800;
+    --status-paid: #00E676;
+    --status-processing: #2196F3;
+    --status-completed: #00E5D4;
+    --status-cancelled: #FF5252;
+    --status-expired: #9E9E9E;
+    --status-failed: #FF5252;
+    --status-refunded: #AB47BC;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-glow-cyan: 0 0 20px rgba(0, 229, 212, 0.15);
+    --shadow-glow-purple: 0 0 20px rgba(122, 44, 255, 0.15);
+
+    /* Border */
+    --border-color: rgba(141, 154, 170, 0.15);
+    --border-glow: rgba(0, 229, 212, 0.3);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+    /* Typography */
+    --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-gaming: 'Orbitron', monospace;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 400ms ease;
+
+    /* Z-Index */
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-modal-backdrop: 300;
+    --z-modal: 400;
+    --z-toast: 500;
+
+    /* Container */
+    --container-max: 1280px;
+    --container-padding: 20px;
+}
